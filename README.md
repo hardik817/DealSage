@@ -30,8 +30,6 @@ Model training performance was monitored using [Weights & Biases](https://wandb.
 ![Training Loss Curve](https://github.com/hardik817/DealSage/blob/main/assets/image.png)
 *Training Loss Curve*
 
-![Validation Metrics](assets/wandb_metrics.png)
-*Validation Accuracy and Performance Metrics*
 
 > 📌 Fine-tuned on LLaMA 3.1 with 4-bit quantization using `bitsandbytes`, `accelerate`, and `peft`.
 
@@ -41,7 +39,8 @@ Model training performance was monitored using [Weights & Biases](https://wandb.
 
 The system autonomously identifies and evaluates deals using multiple AI agents, visualizing logs and predictions:
 
-![Working Demo Screenshot](assets/ui_working.png)
+![Working Demo Screenshot](https://github.com/hardik817/DealSage/blob/main/assets/WhatsApp%20Image%202025-07-10%20at%2009.21.35_89d74b06.jpg)
+()
 *Agent-based system identifying product deals with UI logging and analytics*
 
 ### 🔁 Live Log Panel
