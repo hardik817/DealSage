@@ -27,13 +27,11 @@ An AI-powered platform that autonomously scrapes online product deals, filters h
 
 Model training performance was monitored using [Weights & Biases](https://wandb.ai), tracking convergence, metrics, and stability:
 
-<p align="center">
-  <img src="assets/wandb_loss_curve.png" width="600" alt="Training Loss Curve"/>
-</p>
+![Training Loss Curve](assets/wandb_loss_curve.png)
+*Training Loss Curve*
 
-<p align="center">
-  <img src="assets/wandb_metrics.png" width="600" alt="Validation Metrics"/>
-</p>
+![Validation Metrics](assets/wandb_metrics.png)
+*Validation Accuracy and Performance Metrics*
 
 > 📌 Fine-tuned on LLaMA 3.1 with 4-bit quantization using `bitsandbytes`, `accelerate`, and `peft`.
 
@@ -43,15 +41,13 @@ Model training performance was monitored using [Weights & Biases](https://wandb.
 
 The system autonomously identifies and evaluates deals using multiple AI agents, visualizing logs and predictions:
 
-<p align="center">
-  <img src="assets/ui_working.png" width="700" alt="Working Demo Screenshot"/>
-</p>
+![Working Demo Screenshot](assets/ui_working.png)
+*Agent-based system identifying product deals with UI logging and analytics*
 
 ### 🔁 Live Log Panel
 
-<p align="center">
-  <img src="assets/log_panel.png" width="700" alt="Live Logs"/>
-</p>
+![Live Logs](assets/log_panel.png)
+*Real-time collaboration and prediction logs*
 
 > 🧠 Observe agent interactions, predictions, and decision-making — all streamed live.
 
