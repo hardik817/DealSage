@@ -39,8 +39,10 @@ Model training performance was monitored using [Weights & Biases](https://wandb.
 
 The system autonomously identifies and evaluates deals using multiple AI agents, visualizing logs and predictions:
 
-![Working Demo Screenshot](https://github.com/hardik817/DealSage/blob/main/assets/WhatsApp%20Image%202025-07-10%20at%2009.21.35_89d74b06.jpg)
-()
+![Working Demo Screenshot](https://github.com/hardik817/DealSage/blob/main/assets/Screenshot%202025-07-10%20083419.png)
+(https://github.com/hardik817/DealSage/blob/main/assets/WhatsApp%20Image%202025-07-10%20at%2009.21.35_89d74b06.jpg)
+
+---
 *Agent-based system identifying product deals with UI logging and analytics*
 
 ### 🔁 Live Log Panel
