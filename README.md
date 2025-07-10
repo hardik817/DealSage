@@ -1,25 +1,59 @@
-# DealSage
-# 🛍️ The Price is Right – Autonomous Deal Evaluation System
+# 🛍️ DealSage – The Price is Right
 
-An AI-powered platform that scrapes online product deals, filters the most promising ones, estimates their true prices using ensemble learning, and visualizes deal value – all autonomously.
+An AI-powered platform that autonomously scrapes online product deals, filters high-value items, estimates their actual price using an ensemble of agents, and visualizes deal insights — in real-time.
 
-> 💡 Combines LLMs, RAG, fine-tuning, and classical ML to build a production-ready pricing agent system.
+> 💡 Combines cutting-edge LLMs, RAG, fine-tuning, and classical ML for a production-ready pricing agent system.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 **Deal Scraping** from multiple RSS feeds using `BeautifulSoup` and `feedparser`
-- 🧠 **LLM Agents**:
-  - Fine-tuned LLaMA 3 on Modal (SpecialistAgent)
-  - GPT-4o with RAG over ChromaDB (FrontierAgent)
-  - Gemini 2.5 Flash with JSON-structured parsing (ScannerAgent)
-- 🌲 **Traditional ML Agents**:
-  - Random Forest with MiniLM embeddings
-  - Ensemble agent that combines predictions via Linear Regression
-- 📈 **Interactive UI** using Gradio for real-time logging and analysis
-- 📡 **Push Notifications** and autonomous opportunity alerts
-- 🧠 **Memory + Planning System** to avoid duplication and enable continuous monitoring
+- 🔍 **Autonomous Deal Scraping** from RSS feeds via `feedparser` and `BeautifulSoup`
+- 🤖 **Multi-Agent Pricing Architecture**:
+  - 🧠 `SpecialistAgent`: Fine-tuned Meta LLaMA 3.1 (deployed via Modal)
+  - 🔍 `FrontierAgent`: GPT-4o or Gemini 2.5 with RAG via ChromaDB
+  - 📄 `ScannerAgent`: Gemini 2.5 Flash with JSON-structured parsing
+  - 🌲 `RandomForestAgent`: ML model with MiniLM sentence embeddings
+  - 🧮 `EnsembleAgent`: Combines predictions via Linear Regression
+- 📊 **Live Gradio Interface** with:
+  - Real-time logging
+  - 3D semantic embeddings (Plotly)
+- 🧠 **Memory + Planning System** to avoid duplicates and ensure continuous improvement
+- 📡 **Push Notification & Alerts** for high-discount opportunities
+
+---
+
+## 🧪 Training Logs (Weights & Biases)
+
+Model training performance was monitored using [Weights & Biases](https://wandb.ai), tracking convergence, metrics, and stability:
+
+<p align="center">
+  <img src="assets/wandb_loss_curve.png" width="600" alt="Training Loss Curve"/>
+</p>
+
+<p align="center">
+  <img src="assets/wandb_metrics.png" width="600" alt="Validation Metrics"/>
+</p>
+
+> 📌 Fine-tuned on LLaMA 3.1 with 4-bit quantization using `bitsandbytes`, `accelerate`, and `peft`.
+
+---
+
+## 🧪 Working Demo
+
+The system autonomously identifies and evaluates deals using multiple AI agents, visualizing logs and predictions:
+
+<p align="center">
+  <img src="assets/ui_working.png" width="700" alt="Working Demo Screenshot"/>
+</p>
+
+### 🔁 Live Log Panel
+
+<p align="center">
+  <img src="assets/log_panel.png" width="700" alt="Live Logs"/>
+</p>
+
+> 🧠 Observe agent interactions, predictions, and decision-making — all streamed live.
 
 ---
 
@@ -51,37 +85,3 @@ An AI-powered platform that scrapes online product deals, filters the most promi
                           └────────────┬────────────┘
                                        ▼
                              📡 User Notification System
-
-## 🧪 Training Logs (Weights & Biases)
-
-Here’s how the model performed during training using [Weights & Biases](https://wandb.ai):
-
-<p align="center">
-  <img src="assets/wandb_loss_curve.png" width="600" alt="Training Loss Curve"/>
-</p>
-
-<p align="center">
-  <img src="assets/wandb_metrics.png" width="600" alt="Validation Metrics"/>
-</p>
-
-We monitored training, loss convergence, and validation accuracy using W&B's dashboard. The model was trained on LLaMA 3.1 with 4-bit quantization using `bitsandbytes` and `peft`.
-
-
-## 🧪 Working Demo
-
-The agent-based system identifies potential deals, estimates their price using multiple AI agents, and presents results with logs and 3D embeddings:
-
-<p align="center">
-  <img src="assets/ui_working.png" width="700" alt="Working Demo Screenshot"/>
-</p>
-
-### 🔁 Log Panel
-
-<p align="center">
-  <img src="assets/log_panel.png" width="700" alt="Live Logs"/>
-</p>
-
-The logs show the collaboration between agents, price predictions, and deal evaluations in real-time. You can also visualize semantic similarity in the 3D Plotly graph powered by `sentence-transformers` and `plotly`.
-
----
-
