@@ -27,7 +27,7 @@ An AI-powered platform that autonomously scrapes online product deals, filters h
 
 Model training performance was monitored using [Weights & Biases](https://wandb.ai), tracking convergence, metrics, and stability:
 
-![Training Loss Curve](assets/wandb_loss_curve.png)
+![Training Loss Curve](https://github.com/hardik817/DealSage/blob/main/assets/image.png)
 *Training Loss Curve*
 
 ![Validation Metrics](assets/wandb_metrics.png)
