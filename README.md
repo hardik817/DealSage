@@ -47,7 +47,7 @@ The system autonomously identifies and evaluates deals using multiple AI agents,
 
 ### 🔁 Live Log Panel
 
-![Live Logs](assets/log_panel.png)
+![Live Logs](https://github.com/hardik817/DealSage/blob/main/assets/Screenshot%202025-07-10%20083532.png)
 *Real-time collaboration and prediction logs*
 
 > 🧠 Observe agent interactions, predictions, and decision-making — all streamed live.
